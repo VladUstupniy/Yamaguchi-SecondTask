@@ -1,0 +1,107 @@
+.main__page {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0px 15px;
+    @media (min-width: 1200px) {
+        flex-direction: row;
+        padding: 70px 0px 50px;
+        justify-content: space-around;
+    }
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.content__title {
+    width: 290px;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin-bottom: 60px;
+    @media (min-width: 1200px) {
+        width: 570px;
+        font-size: 56px;
+        line-height: 90%;
+    }
+}
+.content__title span {
+    display: block;
+    margin-bottom: 34px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @media (min-width: 1200px) {
+        margin-bottom: 20px;
+    }
+}
+.content__text {
+    margin-bottom: 30px;
+    width: 290px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    @media (min-width: 1200px) {
+        width: 570px;
+    }
+}
+.content__text p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 170%;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    @media (min-width: 1200px) {
+        font-size: 22px;
+    }
+}
+.content__say {
+    display: block;
+    font-size: 38px;
+    line-height: 90%;
+    margin-bottom: 20px;
+    font-weight: 900;
+    color: #FFFFFF;
+    &::after {
+        content: ':';
+        font-weight: normal;
+    }
+    @media (min-width: 1200px) {
+        font-size: 44px;
+        line-height: 0;
+        margin-bottom: 40px;
+    }
+}
+.content__ok {
+    display: inline-block;
+    font-size: 62px;
+    line-height: 90%;
+    font-weight: 900;
+    margin-bottom: 10px;
+    &::after {
+        content: ',';
+        font-weight: normal;
+    }
+    &::before {
+        content: '«';
+        font-weight: normal;
+    }
+    @media (min-width: 1200px) {
+        text-indent: 60px;
+        margin-bottom: 0;
+    }
+}
+.content__yamaguchi {
+    display: inline-block;
+    font-size: 50px;
+    line-height: 90%;
+    font-weight: 900;
+    &::after {
+        content: '»';
+        font-weight: normal;
+    }
+    @media (min-width: 1200px) {
+        font-size: 62px;
+    }
+}
